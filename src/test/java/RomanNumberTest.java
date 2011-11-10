@@ -2,15 +2,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.util.Collection;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 
-/**
- * @since 11/10/11
- */
 @RunWith(Parameterized.class)
 public class RomanNumberTest {
   private final int number;
@@ -27,11 +23,6 @@ public class RomanNumberTest {
     assertEquals(expected, roman.getRoman());
   }
 
-  /**
-   * innerste Array: bestimmt Anzahl Konstruktur-Elemente
-   * äußeres Array: bestimmt Anzahl der Tests
-   * @return
-   */
   @Parameterized.Parameters
   public static List<Object[]> data() {
     final Object[][] objects = {
