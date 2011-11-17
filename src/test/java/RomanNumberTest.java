@@ -36,6 +36,14 @@ public class RomanNumberTest {
             {10, "X"},
             {11, "XI"},
             {14, "XIV"},
+            {15, "XV"},
+            {16, "XVI"},
+            {19, "XIX"},
+            {20, "XX"},
+            {21, "XXI"},
+            {24, "XXIV"},
+            {25, "XXV"},
+            {26, "XXVI"},
     };
     return asList(objects);
   }
