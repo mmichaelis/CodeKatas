@@ -1,3 +1,4 @@
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -11,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class RomanNumberTest {
   private final int number;
   private final String expected;
-
+  
   public RomanNumberTest(final int number, final String expected) {
     this.number = number;
     this.expected = expected;
@@ -19,8 +20,7 @@ public class RomanNumberTest {
 
   @Test
   public void testGetRoman() throws Exception {
-    final RomanNumber roman = new RomanNumber(number);
-    assertEquals(expected, roman.getRoman());
+    assertEquals(expected, RomanNumberCalculator.getRoman(number));
   }
 
   @Parameterized.Parameters
@@ -44,7 +44,22 @@ public class RomanNumberTest {
             {24, "XXIV"},
             {25, "XXV"},
             {26, "XXVI"},
-    };
+            {39, "XXXIX"},
+            {40, "XL"},
+            {44, "XLIV"},
+            {49, "XLIX"},
+            {50, "L"},
+            {66, "LXVI"},
+            {99, "XCIX"},
+            {100, "C"},
+            {101, "CI"},
+            {101, "CI"},
+            {468, "CDLXVIII"},
+            {573, "DLXXIII"},
+            {999, "CMXCIX"},
+            {1000, "M"},
+            {2999, "MMCMXCIX"},
+  };
     return asList(objects);
   }
 
