@@ -62,6 +62,8 @@ public class RomanNumberTest {
             {573, "DLXXIII"},
             {999, "CMXCIX"},
             {1000, "M"},
+            {1001, "MI"},
+            {1111, "MCXI"},
             {2999, "MMCMXCIX"},
     };
     return asList(objects);

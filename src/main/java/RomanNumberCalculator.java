@@ -1,5 +1,5 @@
 /**
- * Utitlity class that can calculate the roman representation of an arabic number using the 'Substraktionsregel'.
+ * Utility class that can calculate the roman representation of an arabic number using the 'Substraktionsregel'.
  */
 public class RomanNumberCalculator {
 
