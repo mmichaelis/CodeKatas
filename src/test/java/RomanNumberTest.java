@@ -23,6 +23,11 @@ public class RomanNumberTest {
     assertEquals(expected, RomanNumberCalculator.getRoman(number));
   }
 
+  @Test
+  public void testGetArabic() throws Exception {
+    assertEquals(number, RomanNumberCalculator.getArabic(expected));
+  }
+
   @Parameterized.Parameters
   public static List<Object[]> data() {
     final Object[][] objects = {
