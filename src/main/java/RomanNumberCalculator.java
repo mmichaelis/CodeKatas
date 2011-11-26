@@ -123,14 +123,10 @@ public class RomanNumberCalculator {
       // if the current roman digit 'r' does not fit in, test if the 'Substraktionsregel' produces a number 'x' that fits.
       // to build 'x' the subtrahend 's' is the pre-predecessor in case 'r' is a power of ten else 's' is the predecessor.
       if (isPowerOfTen) {
-        if (i >= romanDigits.length - 2) {
-          continue;
-        }
+        if (i >= romanDigits.length - 2) continue;
         subtrahend = romanDigits[i + 2];
       } else {
-        if (i >= romanDigits.length - 1) {
-          continue;
-        }
+        if (i >= romanDigits.length - 1) continue;
         subtrahend = romanDigits[i + 1];
       }
 
